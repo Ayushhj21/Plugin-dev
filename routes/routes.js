@@ -9,4 +9,9 @@ router.post('/create/user', user.createUser);
 router.post('/create/plugin',plugin.createPlugin)
 
 
-module.exports=router
+router.get('/plugins',plugin.getAllPlugins)
+router.get('/plugin/:id',plugin.getSpecificPlugin)
+
+router.post('/store/plugins/:id',plugin.storePlugin)
+
+module.exports=router   

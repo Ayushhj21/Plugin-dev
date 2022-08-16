@@ -7,9 +7,6 @@ const pluginSchema = new mongoose.Schema({
         trim:true,
         maxlength: [20, 'name can not be more than 20 characters'],
     },
-    pluginId:{
-        type:mongoose.Schema.ObjectId,    
-    },
     
     description:{
         type:String,

@@ -1,5 +1,5 @@
 const User = require("../model/users");
-// const Plugin = require("../models/plug");
+const Plugin = require("../model/plugins");
 
 
 const createUser = async (req, res) => {
@@ -10,6 +10,7 @@ const createUser = async (req, res) => {
       res.status(500).json({ msg: error });
     }
 };
+
 
 
 

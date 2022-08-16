@@ -10,8 +10,8 @@ router.post('/create/plugin',plugin.createPlugin)
 
 
 router.get('/plugins',plugin.getAllPlugins)
-router.get('/plugin/:id',plugin.getSpecificPlugin)
+router.get('/plugin/:id',plugin.getUserPlugin)
 
-router.post('/store/plugins/:id',plugin.storePlugin)
+router.post('/store/plugins/:id',plugin.storePluginIds)
 
 module.exports=router   

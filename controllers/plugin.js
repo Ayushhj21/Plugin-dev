@@ -20,7 +20,7 @@ const getAllPlugins = async (req, res) => {
   }
 };
 
-const getSpecificPlugin = async (req, res) => {
+const getUserPlugin = async (req, res) => {
   try {
     const { id: userId } = req.params;
     const plugin = await User.findOne({ _id: userId });
@@ -43,7 +43,7 @@ const getSpecificPlugin = async (req, res) => {
   }
 };
 
-const storePlugin = async (req, res) => {
+const storePluginIds = async (req, res) => {
   try {
     const { id: userId } = req.params;
     const { pluginId } = req.body;
@@ -69,6 +69,6 @@ const storePlugin = async (req, res) => {
 module.exports = {
   createPlugin,
   getAllPlugins,
-  getSpecificPlugin,
-  storePlugin,
+  getUserPlugin,
+  storePluginIds,
 };
